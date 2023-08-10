@@ -24,19 +24,45 @@ const Main = () => {
             technologies.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-5">
-<div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
-  <FaLinkedin/>
-</div>
-<div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
-  <FaGithub/>
-</div>
+          <a
+              href='https://www.linkedin.com/in/amit-nalawade-28b039205/'
+              target='_blank'
+              rel='noreferrer'
+            >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
+              <FaLinkedin />
+            </div>
+            </a>
 
-<div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
-  <AiOutlineMail/>
-</div>
-<div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
-  <AiFillInstagram/>
-</div>
+            <a
+              href='https://github.com/amit0804-tech'
+              target='_blank'
+              rel='noreferrer'
+            >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
+              <FaGithub />
+            </div>
+</a>
+<a
+              href='/#contact'
+              target='_blank'
+              rel='noreferrer'
+            >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
+              <AiOutlineMail />
+            </div>
+            </a>
+            <a
+              href='https://www.instagram.com/amit_0804/'
+              target='_blank'
+              rel='noreferrer'
+            >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 gap-4 cursor-pointer hover:scale-120 ">
+              <AiFillInstagram />
+            </div>
+
+            </a>
+
           </div>
         </div>
       </div>

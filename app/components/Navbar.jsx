@@ -68,27 +68,42 @@ const Navbar = () => {
           
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/'>Home</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'>Contact</Link>
-            </li>
-          </ul>
-          {/* Hamburger Icon */}
+        <div>
+  <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/' scroll={false}>
+        Home
+      </Link>
+    </li>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/#about' scroll={false}>
+        About
+      </Link>
+    </li>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/#skills' scroll={false}>
+        Skills
+      </Link>
+    </li>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/#projects' scroll={false}>
+        Projects
+      </Link>
+    </li>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/resume' scroll={false}>
+        Resume
+      </Link>
+    </li>
+    <li className='ml-10 text-sm uppercase hover:border-b'>
+      <Link href='/#contact' scroll={false}>
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
+
+          
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
@@ -99,14 +114,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
       <div
         className={
           nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
         }
       >
-        {/* Side Drawer Menu */}
+      
         <div
           className={
             nav
@@ -204,12 +217,7 @@ const Navbar = () => {
                   </div>
                 </Link>
                 <Link href='/resume'>
-                  {/* <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <BsFillPersonLinesFill />
-                  </div> */}
+                  
                 </Link>
               </div>
             </div>
